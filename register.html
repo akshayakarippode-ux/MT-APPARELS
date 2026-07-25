@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a customer account with MT APPARELS to manage custom apparel orders, submit specs, and approve visual mockups.">
+    <title>Create Customer Account | MT APPARELS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="auth-page">
+        <div class="auth-card" style="max-width: 540px;">
+            
+            <a href="index.html" class="auth-logo" aria-label="Go back to MT APPARELS landing page">
+                <img src="assets/logo_mark.png" alt="MT APPARELS Icon" class="logo-img">
+                <span>MT APPARELS</span>
+            </a>
+
+            <div class="auth-header">
+                <h1 class="auth-title">Create Account</h1>
+                <p class="auth-subtitle">Join us to start corporate and custom apparel production.</p>
+            </div>
+
+            <form id="register-form" novalidate>
+                <div class="form-group">
+                    <label for="reg-name" class="form-label">Full Name *</label>
+                    <input type="text" id="reg-name" class="form-control" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reg-email" class="form-label">Email Address *</label>
+                        <input type="email" id="reg-email" class="form-control" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-phone" class="form-label">Phone Number *</label>
+                        <input type="tel" id="reg-phone" class="form-control" placeholder="+1-555-0199" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-company" class="form-label">Company Name (Optional)</label>
+                    <input type="text" id="reg-company" class="form-control" placeholder="Enter Company Ltd.">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reg-password" class="form-label">Password *</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" id="reg-password" class="form-control" placeholder="••••••••" required>
+                            <button type="button" class="password-toggle" id="reg-pass-toggle-btn" aria-label="Show password">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="eye-icon">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-confirm-password" class="form-label">Confirm Password *</label>
+                        <div class="password-input-wrapper">
+                            <input type="password" id="reg-confirm-password" class="form-control" placeholder="••••••••" required>
+                            <button type="button" class="password-toggle" id="reg-confirm-toggle-btn" aria-label="Show confirm password">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="eye-icon">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <label class="checkbox-container">
+                        I agree to the <a href="#" class="auth-link">Terms of Service</a> & <a href="#" class="auth-link">Privacy Policy</a>
+                        <input type="checkbox" id="reg-terms" required>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary auth-submit-btn">Create Customer Account</button>
+                
+                <div class="form-feedback" id="register-feedback"></div>
+            </form>
+
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html" class="auth-link">Log in here</a></p>
+                <p style="margin-top: 1.5rem; font-size: 0.85rem;"><a href="index.html" class="auth-link">&larr; Back to Main Website</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript interactions -->
+    <script src="script.js"></script>
+</body>
+</html>
